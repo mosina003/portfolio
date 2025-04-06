@@ -1,0 +1,119 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Layout */
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== About Page Styles ===== */
+.about-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #003973, #090e29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.8s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.about-card {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2.5rem 3rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  color: white;
+  max-width: 1000px; /* increased width */
+  width: 90%; /* allows some responsiveness */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  animation: fadeInUp 1s ease;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.about-card p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.about-card strong {
+  font-weight: 700;
+  color: #ffe600;
+}
+
+/* Unique keyframe animation for About */
+@keyframes aboutFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.interest-section {
+  margin-top: 2.5rem;
+}
+
+.interest-section h3 {
+  font-size: 1.8rem;
+  color: #fefefe;
+  margin-bottom: 1.2rem;
+}
+
+.interest-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.interest-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+  min-width: 130px;
+  max-width: 160px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.interest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.interest-card span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.interest-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+

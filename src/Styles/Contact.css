@@ -1,0 +1,64 @@
+.contact-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #003973, #090e29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.contact-card {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2.5rem 3rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  color: white;
+  max-width: 650px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  animation: fadeInUp 1s ease;
+}
+
+.contact-card h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  color: #ffe600;
+}
+
+.contact-info {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-item {
+  font-size: 1.2rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-item a {
+  color: #facc15;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-item a:hover {
+  text-shadow: 0 0 8px #ffe600;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
