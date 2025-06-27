@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import "../styles/HeroSection.css";
+import "../Styles/HeroSection.css";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
