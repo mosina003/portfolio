@@ -1,6 +1,6 @@
 import React from "react";
 import { Img } from "react-image";
-import "../styles/ProjectCard.css";
+import "../Styles/ProjectCard.css";
 
 const ProjectCard = ({ title, description, image, techStack, link }) => {
   return (
